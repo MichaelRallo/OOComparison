@@ -29,10 +29,10 @@ class Box {
       double height;   // Height of a box
 };
 //Normal
-Box Box1();
+Box box1();
 //New/Delete KeyWord (Normal Pointer)
-Box* Box2 = new Box();
-delete Box2;
+Box* box2 = new Box();
+delete box2;
 ```
 ---
 ## Constructing/initializing
