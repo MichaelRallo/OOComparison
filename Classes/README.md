@@ -1,4 +1,4 @@
-#Classes
+# Classes
 ### Classes in Java and C++ can be pretty similar in functionality. There are a few structural differences when it comes to classes in each of the languages, though.
 
 ---
@@ -59,14 +59,16 @@ delete box2;
 ```
 ---
 ## Constructing/initializing
-### Java:
+### Java: The Constructor can be implemented simply by creating a method using the Class name. Overloading and Overriding are available as well.
 ```Java
+//Note this Class would be in it's separate .java file.
 public class Shape{
     public void color(){
       System.out.println("I love Colors!");
     }
 }
 
+//Note this Class would be in it's separate .java file.
 public class Box extends Shape{
   public double length;
   public double breadth;
@@ -92,12 +94,9 @@ public class Box extends Shape{
   public void color(){
     System.out.println("I love Boxy Colors!");
   }
-
-
-
 }
 ```
-### C++:
+### C++: Can be implemented similar to java. Overloading and Overriding are available as well.
 
 ```C++
 class Shape {
@@ -107,7 +106,7 @@ class Shape {
     }
 };
 
-class Box : Shape {
+class Box {
   public:
     double length;
     double breadth;
@@ -141,5 +140,39 @@ class Box : Shape {
 ```
 ---
 ## Destructing/de-initializing
-### Java:
-### C++:
+### Java: Java is a Garbage Collected Language, which makes is very difficult to predict when an object will be destroyed. As a result, there are no destructors in Java, however, there is a finalize method which can be used to determine is an object has been closed or not.
+### C++: The delete Keyword makes it easy to determine when/where an Object is being destructed/de-initialized. Note by adding a ~ before the class name we create the constructor method. The Example below outputs: "Box Created! Box Destroyed!"
+
+```C++
+class Box {
+  public:
+    double length;
+    double breadth;
+    double height;
+
+    int getBoxID() const { return boxID; }
+    void setBoxID(const int id) { boxID = id; }
+
+    //Constructor
+    Box() {
+      std::cout << "Box Created!" << std::endl;
+    }
+
+    //Destructor
+    ~Box() {
+      std::cout << "Box Destroyed!" << std::endl;
+    }
+
+  protected:
+    int groupID;
+
+  private:
+    int boxID;
+};
+
+int main() {
+	Box* Box2 = new Box();
+	delete Box2;
+	return 0;
+};
+```
