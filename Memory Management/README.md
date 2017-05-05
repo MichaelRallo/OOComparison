@@ -21,7 +21,7 @@ Box box1 = new Box();
 ```
 
 ### C++: Like Java's Garbage Collection, C++'s Garbage Collection reclaims memory when an object will never be accessed again. The new and delete keywords can be used like in the example below to create (allocate) and delete (deallocate) memory as needed. Note if unsuccessful, new returns zero or throws an exception (super useful!). With Smart Pointers, you may use the new keyword without needing to use the delete keyword after, for it will be destroyed automatically.
-#### Example of Creating a String in C++:
+#### Example of Creating an Object in C++:
 
 ```C++
 class Box {
@@ -41,4 +41,4 @@ delete Box2;
 ### Both Java and C++ may have Garbage Collections. C++ provides more options than just Garbage Collection when it come to memory management, though. It is important to keep in mind not all C++ compilers implement Garbage Collection.  
 ---
 ## Automatic Reference Counting
-### Both Java and C++ keep track of reference counts. This aids is signaling when their Garbage Collector need to collect said garbage. 
+### Both Java and C++ keep track of reference counts. This aids is signaling when their Garbage Collector need to collect said garbage.
