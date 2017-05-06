@@ -3,7 +3,7 @@
 
 #### Example of Java Instance Reference:
 ```Java
-public class Box extends Shape{
+public class Box {
   private int boxID;
 
   //Constructor
