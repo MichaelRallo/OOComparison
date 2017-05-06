@@ -1,5 +1,6 @@
 # Lambda expressions, Closures, or Functions as Types
-[Back to Home](README.md)
+
+<!-- [Back to Home](README.md) -->
 
 ####Both Java and C++ support lambda expressions, allowing for functions to be created at runtime with certain custimizable features.
 ##Java
