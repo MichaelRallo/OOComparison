@@ -1,30 +1,28 @@
 # Errors and Exception Handling
-#### Java handles error and exception handling quite extensively.
-###### Checking whether an expected object is null or not is the one of the more simpler approaches. This can be done using a simple if statement. This becomes greatly useful when parsing (JSON, XML, etc.).  
-###### Using Try-Catch blocks and throwing exceptions is Java's biggest combatant against errors and exceptions. Java an error occurs within the Try portion of the Block, the Catch portion of the block will execute throwing in the exception as a parameter.
+#### Java and C++ handles error and exception handling quite extensively in very similar ways.
+###### Checking whether an expected object is null or not is the one of the more simpler approaches, which can be done using a simple if statement. This becomes greatly useful when parsing (JSON, XML, etc.).  
+###### Using Try-Catch blocks and throwing exceptions is the biggest combatant against errors and exceptions in both Java and C++. When an error occurs within the Try portion of the Block, the Catch portion of the block will execute throwing in the exception as a parameter. These errors can be thrown manually and unexpectedly throughout the program.
 
 ##### Example of Java Try-Catch without Exception:
 ```Java
 //Note this Class would be in it's separate .java file.
-public class Box {
+public class Box{
   private int boxID;
 
   //Constructor
   public Box(int boxID){
+    if(boxID > 10){
+      throw new IndexOutOfBoundsException("No BoxIDs cannot be greater than 10!");
+    }
     this.boxID = boxID;
+    System.out.println("BoxID is: " + boxID);
   }
 }
 
 public static void main(String[] args) {
-  Box box1 = new Box(1);
-  try {
-    //Get Information about the Private Field *** THIS FIELD DOES EXIST ***
-    Field boxIDField = box1.getClass().getDeclaredField("boxID");
-    System.out.println("Box ID field: " + boxIDField);
 
-    //Get Value of the Private Field
-    boxIDField.setAccessible(true);
-    System.out.println("Box ID value: " + boxIDField.get(box1));
+  try {
+    Box box1 = new Box(1);
   }
   catch (Exception e) {
     e.printStackTrace();
@@ -33,32 +31,29 @@ public static void main(String[] args) {
 }
 ```
 ###### The output would be:  
-Box ID field: private int oofinalproject.Box.boxID  
-Box ID value: 1  
+BoxID is: 1  
 End of Program!
 
 ##### Example of Java Try-Catch with Exception:
 ```Java
 //Note this Class would be in it's separate .java file.
-public class Box {
+public class Box{
   private int boxID;
 
   //Constructor
   public Box(int boxID){
+    if(boxID > 10){
+      throw new IndexOutOfBoundsException("No BoxIDs cannot be greater than 10!");
+    }
     this.boxID = boxID;
+    System.out.println("BoxID is: " + boxID);
   }
 }
 
 public static void main(String[] args) {
-  Box box1 = new Box(1);
-  try {
-    //Get Information about the Private Field *** THIS FIELD DOES NOT EXIST ***
-    Field boxIDField = box1.getClass().getDeclaredField("someFieldThatDoesNotExist");
-    System.out.println("Box ID field: " + boxIDField);
 
-    //Get Value of the Private Field
-    boxIDField.setAccessible(true);
-    System.out.println("Box ID value: " + boxIDField.get(box1));
+  try {
+    Box box1 = new Box(11);
   }
   catch (Exception e) {
     e.printStackTrace();
@@ -68,10 +63,76 @@ public static void main(String[] args) {
 ```
 ###### The output would be:  
 End of Program!  
-<span style="color:red">java.lang.NoSuchFieldException: boxIDThrowException  
-	at java.lang.Class.getDeclaredField(Class.java:2070)  
-	at oofinalproject.OOFinalProject.main(OOFinalProject.java:25)</span>
+<span style="color:red">java.lang.IndexOutOfBoundsException: No BoxIDs cannot be greater than 10!  
+	at oofinalproject.Box.<init>(Box.java:19)  
+	at oofinalproject.OOFinalProject.main(OOFinalProject.java:24)</span>
 
-##### Note, the program did not crash and stop entirely even though an error occured. The "End of Program!" still outputted. This is the power of Java's try-catch block.
+##### Note, the program did not crash and stop entirely even though an exception was thrown. The "End of Program!" still outputted.  Exceptions can be thrown manually like in the above example, or triggered whenever ever an error in the program occurs.
 ---
 ### C++ offers a very similar approach to handling Errors and Exception Handling like Java does.
+
+##### Example of C++ Try-Catch without Exception:
+```C++
+class Box {
+  public:
+    //Constructor
+    Box(int boxID) {
+      if (boxID > 10) {
+        throw std::invalid_argument("No BoxIDs cannot be greater than 10!");
+      }
+      this->boxID = boxID;
+      std::cout << "BoxID is: " << boxID << std::endl;
+    }
+  private:
+    int boxID;
+};
+
+int main() {
+
+  try {
+    Box box1(11);
+  }
+  catch (std::invalid_argument& e) {
+    std::cout << e.what() << std::endl;
+  }
+  std::cout << "End of Program!" << std::endl;
+  return 0;
+};
+```
+###### The output would be:  
+BoxID is: 1  
+End of Program!
+
+##### Example of C++ Try-Catch with Exception:
+```C++
+class Box {
+  public:
+    //Constructor
+    Box(int boxID) {
+      if (boxID > 10) {
+        throw std::invalid_argument("No BoxIDs cannot be greater than 10!");
+      }
+      this->boxID = boxID;
+      std::cout << "BoxID is: " << boxID << std::endl;
+    }
+  private:
+    int boxID;
+};
+
+int main() {
+
+  try {
+    Box box1(11);
+  }
+  catch (std::invalid_argument& e) {
+    std::cout << e.what() << std::endl;
+  }
+  std::cout << "End of Program!" << std::endl;
+  return 0;
+};
+```
+###### The output would be:  
+No BoxIDs cannot be greater than 10!  
+End of Program!
+
+##### Like in Java note how the program did not crash and stop entirely even though an exception was thrown. The "End of Program!" still outputted.  Exceptions can be thrown manually like in the above example, or triggered whenever ever an error in the program occurs.
