@@ -7,7 +7,6 @@
 ## How is reflection used?
 #### In both Java and C++, Reflection can be used as a means of serialization to JSON and XML. It can also be used for object relationship mapping to a database.
 
-
 #### Example of Java Reflection:
 ```Java
 //Note this Class would be in it's separate .java file.
