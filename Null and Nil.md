@@ -1,3 +1,3 @@
-# OOComparison - CS4330
-## Group Members: Michael Rallo and Keenan Shumard
-## Languages Being Compared: Java & C++
+# Null/Nil References
+## Which does the language use? (null/nil/etc)
+## Does the language have features for handling null/nil references?

@@ -1,3 +1,4 @@
-# OOComparison - CS4330
-## Group Members: Michael Rallo and Keenan Shumard
-## Languages Being Compared: Java & C++
+# Singleton
+## How is a singleton implemented?
+## Can it be made thread-safe?
+## Can the singleton instance be lazily instantiated?

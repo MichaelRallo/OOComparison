@@ -1,3 +1,4 @@
-# OOComparison - CS4330
-## Group Members: Michael Rallo and Keenan Shumard
-## Languages Being Compared: Java & C++
+# Properties
+## Getters and setters...write your own or built in?
+## Backing variables?
+## Computed properties?

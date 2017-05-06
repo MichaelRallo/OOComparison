@@ -1,3 +1,3 @@
-# OOComparison - CS4330
-## Group Members: Michael Rallo and Keenan Shumard
-## Languages Being Compared: Java & C++
+# Multithreading
+## Threads or thread-like abilities
+## How is multitasking accomplished?

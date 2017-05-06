@@ -1,3 +1,4 @@
-# OOComparison - CS4330
-## Group Members: Michael Rallo and Keenan Shumard
-## Languages Being Compared: Java & C++
+# Interfaces / protocols
+## What does the language support?
+## What abilities does it have?
+## How is it used?

@@ -1,3 +1,4 @@
-# OOComparison - CS4330
-## Group Members: Michael Rallo and Keenan Shumard
-## Languages Being Compared: Java & C++
+# Language Purpose/Genesis
+## Why was the language created?
+## What problems was the language trying to address?
+## Is the language a reaction to a previous language or a replacement for another language?

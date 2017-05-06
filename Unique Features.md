@@ -1,3 +1,2 @@
-# OOComparison - CS4330
-## Group Members: Michael Rallo and Keenan Shumard
-## Languages Being Compared: Java & C++
+# Unique features of the language
+## Does the language have any particularly unique features?
