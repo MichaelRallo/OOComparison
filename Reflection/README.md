@@ -1,4 +1,4 @@
-# Instance Reference
+# Reflection
 ## What reflection abilities are supported?
 #### In both Java and C++, With Reflection, we can learn about an Class's/Object's Members. It is an introspection on Types.
 
@@ -44,17 +44,7 @@ Box ID value: 1
 
 ---
 
-#### Example of C++ Reflection:
-```C++
-class Box {
-  public:
-    //Constructor
-    Box(int boxID) {
-      //Note, 'this' is a pointer to itself, it's not an actual object!
-      this->boxID = boxID;
-    }
-
-  private:
-    int boxID;
-};
-```
+#### In C++ reflection is allowed via run-time type information, however without the use of either a Meta compiler or a framework consisting of Macros, such as Boost or Ponder, it becomes very difficult to implement, unfortunately.
+[Boost Libs/Framework](http://www.boost.org/)  
+[Example of Reflection using Boost](http://pfultz2.com/blog/2012/07/31/reflection-in-under-100-lines/)  
+[Example of Reflection using Ponder + Libs](https://billyquith.github.io/ponder/)
