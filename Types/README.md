@@ -12,7 +12,7 @@
 
 ## Can new value types be created?
 #### Java does not offer support for type definitions. Java does, however, offer Generics.
-#### C++ does offer the ability to create new types through the keyword typedef. Like Java, C++ offers Generics as well.
+#### C++ does offer the ability to create new types through the keyword typedef. Like Java, C++ offers Generics as well. C++ also offers structs as well.
 
 
 
