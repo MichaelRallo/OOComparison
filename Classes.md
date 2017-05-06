@@ -1,4 +1,5 @@
 # Classes
+[Back to Home](README.md)
 ### Classes in Java and C++ can be pretty similar in functionality. There are a few structural differences when it comes to classes in each of the languages, though. Inner/Nested classes are supported in both Java and C++, however unlike C++, Java allows for anonymous classes to capture variables that may be out of scope otherwise.
 
 ---
