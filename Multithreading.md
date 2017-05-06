@@ -1,9 +1,8 @@
 # Multithreading
 ## Threads or thread-like abilities
-## How is multitasking accomplished?
+### Both Java and C++ have Thread abilities.
 
-
-### There are 2 ways Java may Define and Start a Thread. These methods are via implementing the Runnable interface or by Subclassing the Thread Class.
+#### There are 2 ways Java may Define and Start a Thread. These methods are via implementing the Runnable interface or by Subclassing the Thread Class.
 ##### Below is an example of implementing Threads via Subclassing (Java).
 
 ```Java
@@ -62,26 +61,26 @@ Thread 2's count is: 4
 ```C++
 void myThread(int id) {
 
-	for (int counter = 0; counter < 5; counter++) {
-		try {
-			std::this_thread::sleep_for(std::chrono::seconds(1));
-			std::cout << "Thread " << id << "'s count is: " << counter << std::endl;
-		}
-		catch (const std::exception& e) {
-			std::cout << e.what();
-		}
-	}
+  for (int counter = 0; counter < 5; counter++) {
+    try {
+      std::this_thread::sleep_for(std::chrono::seconds(1));
+      std::cout << "Thread " << id << "'s count is: " << counter << std::endl;
+    }
+    catch (const std::exception& e) {
+      std::cout << e.what();
+    }
+  }
 }
 
 int main() {
-	std::thread thread1(myThread, 1);
-	std::thread thread2(myThread, 2);
+  std::thread thread1(myThread, 1);
+  std::thread thread2(myThread, 2);
 
-	thread1.join();
-	thread2.join();
+  thread1.join();
+  thread2.join();
 
-	std::cout << "End of Program!" << std::endl;
-	return 0;
+  std::cout << "End of Program!" << std::endl;
+  return 0;
 };
 ```
 
@@ -97,3 +96,8 @@ Thread 2's count is: 3
 Thread 1's count is: 3  
 Thread 1's count is: 4  
 Thread 2's count is: 4  
+
+---
+
+## How is multitasking accomplished?
+#### Referring to the above code segments, we see particularly interesting methods/functions being code on the Thread objects. In Java, it is the start() and in C++ it is the join(). These methods are use to sunchronize threads/tasks to the main thread to ensure they begin and end as needed.
