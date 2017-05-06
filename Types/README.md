@@ -55,11 +55,6 @@ int main() {
   std::cout << "Using Value Type: " << number << std::endl;
   std::cout << "Using Pointer Type: " << *numberPtr << std::endl;
   std::cout << "Using Reference Type: " << numberRef << std::endl;
-
-  std::cout << "End of Program!" << std::endl << "Press Enter to Exit!" << std::endl;
-  std::string exit;
-  getline(std::cin, exit);
-  return 0;
 };
 ```
 
