@@ -6,7 +6,7 @@
 
 ##### Example of Java Try-Catch without Exception:
 ```Java
-//Note this Class would be in it's separate .java file.
+//Note this Class would be in its separate .java file.
 public class Box{
   private int boxID;
 
@@ -37,7 +37,7 @@ End of Program!
 
 ##### Example of Java Try-Catch with Exception:
 ```Java
-//Note this Class would be in it's separate .java file.
+//Note this Class would be in its separate .java file.
 public class Box{
   private int boxID;
 

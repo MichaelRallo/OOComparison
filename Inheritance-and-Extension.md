@@ -7,14 +7,14 @@
 
 ##### Example of a Java Class extending another Class.
 ```Java
-//Note this Class would be in it's separate .java file.
+//Note this Class would be in its separate .java file.
 public class Delicious {
   public void texture(){
     System.out.println("Delicious Texture!");
   }
 }
 
-//Note this Class would be in it's separate .java file.
+//Note this Class would be in its separate .java file.
 public class Cake extends Delicious{
   public void texture(){
     System.out.println("Cakey Texture!");

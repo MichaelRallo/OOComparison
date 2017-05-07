@@ -9,7 +9,7 @@
 
 ###### Java Example of Handling nulls:
 ```Java
-//Note this Class would be in it's separate .java file.
+//Note this Class would be in its separate .java file.
 public class TestClass {}
 
 public static void main(String[] args) {

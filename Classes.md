@@ -62,14 +62,14 @@ delete box2;
 ## Constructing/initializing
 ### Java: The Constructor can be implemented simply by creating a method using the Class name. Overloading and Overriding are available as well.
 ```Java
-//Note this Class would be in it's separate .java file.
+//Note this Class would be in its separate .java file.
 public class Shape{
     public void color(){
       System.out.println("I love Colors!");
     }
 }
 
-//Note this Class would be in it's separate .java file.
+//Note this Class would be in its separate .java file.
 public class Box extends Shape{
   public double length;
   public double breadth;

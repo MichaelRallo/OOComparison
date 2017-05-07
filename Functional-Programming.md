@@ -5,7 +5,7 @@
 
 ##### Example functions on Java. Notice how we cannot place the calculateSquareArea() function by itself and that it must be placed within a Class.
 ```Java
-//Note this Class would be in it's separate .java file.
+//Note this Class would be in its separate .java file.
 public class Square{
   public double height;
   public double width;
@@ -57,4 +57,4 @@ int main() {
   return 0;
 };
 ```
-#### Notice how C++ functions may be standalone and do not need to be within a Class. 
+#### Notice how C++ functions may be standalone and do not need to be within a Class.

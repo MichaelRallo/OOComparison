@@ -5,7 +5,7 @@
 ## How is a singleton implemented?
 ###### Example of Java's Singleton (Pugh's Singleton):
 ```Java
-//Note this Class would be in it's separate .java file.
+//Note this Class would be in its separate .java file.
 public class MyThread extends Thread{
 
     MySingletonLazy singletonLazyObject;
@@ -21,7 +21,7 @@ public class MyThread extends Thread{
     }
 }
 
-//Note this Class would be in it's separate .java file.
+//Note this Class would be in its separate .java file.
 public class MySingletonLazy {
     private MySingletonLazy() {System.out.println("New Instance Created!");}
 

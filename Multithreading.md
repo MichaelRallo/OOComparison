@@ -7,7 +7,7 @@
 ##### Below is an example of implementing Threads via Subclassing (Java).
 
 ```Java
-//Note this Class would be in it's separate .java file.
+//Note this Class would be in its separate .java file.
 public class MyThread extends Thread{
 
   int id;
