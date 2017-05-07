@@ -1,5 +1,7 @@
 # Singleton
 [Back to Home](README.md)
+
+### Singletons are used to ensure only one instance of an Object is created. This patterns proves useful in cases where exactly one objects is needed to coordinate actions across a system.
 ## How is a singleton implemented?
 ###### Example of Java's Singleton (Pugh's Singleton):
 ```Java
