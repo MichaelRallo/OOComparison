@@ -13,7 +13,7 @@
 [Interfaces / protocols](Interface-and-Protocols.md)  
 [Inheritance / extension](Inheritance-and-Extension.md)  
 [Reflection](Reflection.md)  
-[Memory management](Mememory-Management.md)  
+[Memory management](Memory-Management.md)  
 [Comparisons of references and values](Reference-and-Values.md)  
 [Null/nil references](Null-and-Nil.md)  
 [Errors and exception handling](Errors-and-Exception-Handling.md)  
