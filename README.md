@@ -17,7 +17,7 @@
 [Comparisons of references and values](Reference-and-Values.md)  
 [Null/nil references](Null-and-Nil.md)  
 [Errors and exception handling](Errors-and-Exception-Handling.md)  
-[Lambda expressions, closures, or functions as types](Lambdas-Closures-Functions-as-Types.md) 
+[Lambda expressions, closures, or functions as types](Lambdas-Closures-Functions-as-Types.md)   
 [Implementation of listeners and event handlers](Listeners-and-Event-Handlers.md)  
 [Singleton](Singleton.md)  
 [Procedural programming](Procedural-Programming.md)  
