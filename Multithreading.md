@@ -103,4 +103,4 @@ Thread 2's count is: 4
 [A more in depth explanation may be found here.](http://www.cplusplus.com/reference/thread/thread/)
 
 ## How is multitasking accomplished?
-#### Referring to the above code segments, we see particularly interesting methods/functions being code on the Thread objects. In Java, it is the start() and in C++ it is the join(). These methods are use to sunchronize threads/tasks to the main thread to ensure they begin and end as needed.
+#### Referring to the above code segments, we see particularly interesting methods/functions being code on the Thread objects. In Java, it is the start() and in C++ it is the join(). These methods are use to synchronize threads/tasks to the main thread to ensure they begin and end as needed.
