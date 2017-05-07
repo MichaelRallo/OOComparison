@@ -9,6 +9,9 @@
 
 ###### Java Example of Handling nulls:
 ```Java
+//Note this Class would be in it's separate .java file.
+public class TestClass {}
+
 public static void main(String[] args) {
   TestClass nullTest = null;
   if(nullTest == null){
