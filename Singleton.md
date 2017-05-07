@@ -1,4 +1,5 @@
 # Singleton
+[Back to Home](README.md)
 ## How is a singleton implemented?
 ###### Example of Java's Singleton:
 

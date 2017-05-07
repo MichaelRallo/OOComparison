@@ -1,4 +1,5 @@
 # Errors and Exception Handling
+[Back to Home](README.md)
 #### Java and C++ handles error and exception handling quite extensively in very similar ways.
 ###### Checking whether an expected object is null or not is the one of the more simpler approaches, which can be done using a simple if statement. This becomes greatly useful when parsing (JSON, XML, etc.).  
 ###### Using Try-Catch blocks and throwing exceptions is the biggest combatant against errors and exceptions in both Java and C++. When an error occurs within the Try portion of the Block, the Catch portion of the block will execute throwing in the exception as a parameter. These errors can be thrown manually and unexpectedly throughout the program.
