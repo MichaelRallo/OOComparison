@@ -1,5 +1,4 @@
 # Singleton
-[Back to Home](README.md)
 ## How is a singleton implemented?
 ###### Example of Java's Singleton:
 
@@ -20,3 +19,8 @@ https://www.tutorialspoint.com/java/java_using_singleton.htm
 
 
 http://stackoverflow.com/questions/1008019/c-singleton-design-pattern
+
+
+
+https://sourcemaking.com/design_patterns/singleton/java/1
+https://sourcemaking.com/design_patterns/singleton/java/2
