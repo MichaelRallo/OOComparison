@@ -1,25 +1,38 @@
 # Interfaces / protocols
 [Back to Home](README.md)
 #### Java -> implements interfaces. C++ -> uses virtual keyword.
-##Java
+## Java
 ### What does the language support?
-Through Java Servlets, Java has been heavily used for web dev applications. Therefore, it supports most protocols that are needed for web applications, including TCP, UDP and HTTPS. Java has expanded it's use cases into nearly every type of application that there is, so it natively supports most basic interfaces and protocols that
+Java supports the use of Interfaces in order to provide a framework for a class, and make it compatible with other classes that may want to interact with it. 
 ### What abilities does it have?
-The abilities of these protocols extends mostly to the limits of the protocols themselves. Java's libraries are made to be exhaustive, so most features are implemented. 
-### How is it used?
-I'll use an example for how to make a basic SSL connection, although this interface can be used to make connections through a few different protocols. 
+By implementing an interface, a class can specifications for the methods that a class of that type should behave. It can specify the methods that it needs to have, and contain variables that the class will need to implement those methods. It shouldn't specify any of the actual logic of those methods, but rather be used as a guide for how the class should be implemented. 
+## How is it used?
+**Basic declaration of an interface:**  
 ```Java
-    //Required Library
-    import java.net.*;  
+public interface MyInterface {
 
+    public String hello = "Hello";
 
-    URL url=new URL("http://www.example.com");  
-    try(final InputStream in = url.openStream()){
-        //...
-    }
+    public void sayHello();
+}
 ```
-A URL object is created that holds on to the URL of the target. This can be formatted to represent a few different formats, doing anything from requesting JSON to making database changes. Once you call ```openStream()```, then the request is made and the results are put in the InputStream object where they can be extracted and read. 
-##C++
+
+Using the interface keyword, an interface can be created with a similar format to a class. This interface contains one variable and one method. The variable will be reachable in any class that implements it, and that class will also need to contain a ```sayHello()``` method concretely.  
+
+**A class implementing this interface:**
+```Java
+public class MyInterfaceImpl implements MyInterface {
+
+    public void sayHello() {
+        System.out.println(MyInterface.hello);
+    }
+}
+```
+
+
+Example code borrowed from [here](http://tutorials.jenkov.com/java/interfaces.html)
+
+## C++
 ### What does the language support?
 
 ### What abilities does it have?
