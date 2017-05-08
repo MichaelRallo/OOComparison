@@ -3,7 +3,7 @@
 
 ## Java
 #### Getters and setters...write your own or built in?
-It's required to write your own getters and setters in java.  
+It's required to write your own getters and setters in Java.  
 **Example:**
 ```Java
     private String name;
