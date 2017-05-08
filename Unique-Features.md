@@ -5,7 +5,7 @@
 Java was built to be run on as many systems as possible, and as a result can run on the most varied systems.
 #### Java Virtual Machine
 This is the abstract computing machine that is used to allow the great amount of portability that Java provides
-### Multithreaded Capabilities
+#### Multithreaded Capabilities
 Java is designed with in built threading functionality, which makes it simple to run concurrent processes.
 <!-- ####Anonymous Inner Functions
 Java provides easy support for  -->
