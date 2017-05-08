@@ -1,7 +1,7 @@
 # Lambda expressions, Closures, or Functions as Types
 [Back to Home](README.md)
 
-#### Both Java and C++ support lambda expressions, allowing for functions to be created at runtime with certain custimizable features.
+#### Both Java and C++ support lambda expressions, allowing for functions to be created at runtime with certain customizable features.
 ## Java
 ##### Since Java 8, Java has begun supporting several features of functional programming, including lambda expressions and closures. These functions are bound to variables, which can be called using that object.
 #### A basic addition example:

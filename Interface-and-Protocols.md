@@ -34,9 +34,9 @@ Example code borrowed from [here](http://tutorials.jenkov.com/java/interfaces.ht
 
 ## C++
 ### What does the language support?
-C++ doesn't have a seperate functionality for an instance, but the same effect can be achieved with a virtual class. Since C++ supports multiple inheritance, there isn't a limit to how many of these classes can be extended from. 
+C++ doesn't have a separate functionality for an instance, but the same effect can be achieved with a virtual class. Since C++ supports multiple inheritance, there isn't a limit to how many of these classes can be extended from. 
 ### What abilities does it have?
-An entirely virtual class has all of the same functionality as an interface. You can declare methods that will be required in all classes that inherit from it, which will ensure that they have the behaviors that the class specefies. 
+An entirely virtual class has all of the same functionality as an interface. You can declare methods that will be required in all classes that inherit from it, which will ensure that they have the behaviors that the class specifies. 
 ### How is it used?
 
 **Declaration and use of an abstract class**
@@ -53,4 +53,4 @@ An entirely virtual class has all of the same functionality as an interface. You
         }
     }
 ```
-The AbstractExample class serves only to specefy to the classes that inherit it that they need to have a concrete implementation of a function ```f()```. This serves an equivilant purpose to an interface. 
+The AbstractExample class serves only to specify to the classes that inherit it that they need to have a concrete implementation of a function ```f()```. This serves an equivalent purpose to an interface. 
