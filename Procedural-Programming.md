@@ -3,7 +3,7 @@
 #### Does the language support procedural programming?
 Overall, this is a tricky question because of the broadness of the terms. If we are being extremely pedantic, nearly every language can be described as having some degree of procedural qualities, by having an operation equivalent to a function. However, I'm going to restrict my look at this to if they can be structured in the traditional manner of having code be the primary feature, and not data/objects. 
 
-##Java
+## Java
 Java does not support procedural programming, and was made to be entirely OO based. 
 
 ## C++

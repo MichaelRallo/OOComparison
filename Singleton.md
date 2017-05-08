@@ -47,10 +47,10 @@ public static void main(String[] args) {
 ```
 ###### The output would be:
 End of Program!
-New Instance Created!
-From Thread 1
-From Thread 2
-From Thread 3
+New Instance Created!  
+From Thread 1  
+From Thread 2  
+From Thread 3  
 
 
 ###### Example of C++'s Singleton (Meyer's Singleton):

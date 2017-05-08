@@ -50,5 +50,5 @@ producer.addPropertyChangeListener(new PropertyChangeListener() {
 ```
 This function creates a new PropertyChangeListener on the fly, and passes it to the producer. It's required to override the ```propertyChange``` function, which will be executed whenever an event is detected. 
 
-##C++
+## C++
 C++ does not have any kind of native support for event handling or listeners. However, like in most other languages, an equivalent functionality can be generated using an Observer design pattern. This has to be designed and customized by hand to fit the programmers specific use case.

@@ -32,12 +32,12 @@ class player
     private:
         string name;
     public:      
-        void CDog::setName(string y)
+        void setName(string y)
         {
             name = y;
         }
 
-        string CDog::getName();
+        string getName();
         {
             return(name);
         }
