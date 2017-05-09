@@ -12,6 +12,9 @@ Java is designed with in built threading functionality, which makes it simple to
 #### Combines Efficiency and Complexity
 C++ is a language that allows both high level and low level operations. This enables a programmer to work with larger applications that work well with OO design, while also allowing memory management level operations.
 #### Smart Pointers
+C++ employs the use of smart poointers, which clean themselves up to prevent memory leaks. This is in response to a common issue in C, with unhandled pointers leading to issues. 
+#### Friend Functions
+C++ allows the implementation fo friend functions. Thiese work like an extension of a class, but pulls in the private and protected methods in the close. 
 
 <!-- ### Java: Anonymous Inner Functions, Lambdas
 ### C++: Smart Pointers, Friend Functions, C capability, -->
